@@ -43,3 +43,18 @@ The advantages of Shizuku are:
 
 1. Minimal extra time and performance consumption
 2. It is almost identical to the direct invocation API experience (app developers only need to add a small amount of code)
+com.google.firebase.database.DatabaseException: Expected a Map while deserializing, but got a class java.lang.String
+	at com.google.firebase.database.core.utilities.encoding.CustomClassMapper.expectMap(CustomClassMapper.java:344)
+	at com.google.firebase.database.core.utilities.encoding.CustomClassMapper.deserializeToParameterizedType(CustomClassMapper.java:261)
+	at com.google.firebase.database.core.utilities.encoding.CustomClassMapper.deserializeToType(CustomClassMapper.java:176)
+	at com.google.firebase.database.core.utilities.encoding.CustomClassMapper.convertToCustomClass(CustomClassMapper.java:101)
+	at com.google.firebase.database.DataSnapshot.getValue(DataSnapshot.java:229)
+	at com.danzoinj.Login3Activity$6.onChildAdded(Login3Activity.java:350)
+	at com.google.firebase.database.core.ChildEventRegistration.fireEvent(ChildEventRegistration.java:79)
+	at com.google.firebase.database.core.view.DataEvent.fire(DataEvent.java:63)
+	at com.google.firebase.database.core.view.EventRaiser$1.run(EventRaiser.java:55)
+	at android.os.Handler.handleCallback(Handler.java:938)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:263)
+	at android.app.ActivityThread.main(ActivityThread.java:8299)
+	at java.lang.reflect.Method.invoke(Native Method)
